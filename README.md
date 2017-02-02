@@ -20,4 +20,4 @@ nativejs 用于快速构建 移动端webapp。借助路由切换以及数据绑�
 ## 会加入的功能
 1. 一个常用的函数库，其实以及在源码中，但是并没有注入给模块使用
 2. 一个常用的包含loading  以及 alert 的 ui库和对应的调用方法
-3. 一套组件库，比如 <native-radio /> 则会自动生成 一组 radio 按钮
+3. 一套组件库，比如 <code><native-radio /></code> 则会自动生成 一组 radio 按钮
