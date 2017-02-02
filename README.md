@@ -14,7 +14,7 @@ nativejs 用于快速构建 移动端webapp。借助路由切换以及数据绑�
 
 安装 nativejs
 ```bash
-npm install native
+npm install native.js
 ```
 
 安装 native-loader
