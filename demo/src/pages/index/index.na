@@ -1,0 +1,95 @@
+<div class="container">
+	<div class="slidebar" id="slidebar">
+		<ul>
+			<li>
+				<a href="#index" class="active"><i class="fa fa-home fa-light"></i>首页<i class="fa fa-angle-right fa-light"></i></a>
+			</li>
+
+			<li>
+				<a href="#productList"><i class="fa fa-list fa-light"></i>产品展示<i class="fa fa-angle-right fa-light"></i></a>
+			</li>
+
+			<li>
+				<a href="#articleList"><i class="fa fa-newspaper-o fa-light"></i>新闻资讯<i class="fa fa-angle-right fa-light"></i></a>
+			</li>
+
+			<!--<li>
+				<a href="#"><i class="fa fa-comment-o fa-light"></i>留言板<i class="fa fa-angle-right fa-light"></i></a>
+			</li>
+
+			<li>
+				<a href="#"><i class="fa fa-user fa-light"></i>关于我们<i class="fa fa-angle-right fa-light"></i></a>
+			</li>-->
+		</ul>
+	</div>
+	<div class="content-container">
+		<div class="banner">
+			<img src="images/banner.jpg" width="100%">
+		</div>
+
+		<!--<div class="search">
+			<input type="text" placeholder="请输入搜索关键字" id="searchBtn">
+			<i class="fa fa-search fa-blue"></i>
+		</div>-->
+
+		<div class="prolist">
+			<header>
+				<h2>推荐产品</h2>
+				<a href="#productList"><i class="fa fa-angle-right fa-gray"></i></a>
+			</header>
+
+			<dl class="dllist">
+				{$^each data.productList as item}
+				<dd>
+					<a href="#productDetail?id={{item.id}}"><img src="http://demo.yhcms.cn{{item.img}}" width="100%"></a>
+					<a href="#productDetail?id={{item.id}}">{{item.title}}</a>
+				</dd>
+				{$$each}
+			</dl>
+		</div>
+
+		<div class="artlist">
+			<header>
+				<h2>推荐文章</h2>
+				<a href="#articleList"><i class="fa fa-angle-right fa-gray"></i></a>
+			</header>
+
+			<ul class="ullist">
+				{$^each data.articleList as item}
+				<li>
+					<a href="#articleDetail?id={{item.id}}">
+						<p>
+							{{item.title}}
+						</p>
+						<i class="fa fa-angle-right fa-gray"></i>
+					</a>
+				</li>
+				{$$each}
+			</ul>
+		</div>
+
+		<footer class="botfooter">
+			<span></span>
+			<p>Demo for Native.js</p>
+		</footer>
+	</div>
+
+
+	<header class="topheader">
+		<i class="fa fa-reorder fa-light" id="slideBtn"></i>
+		<a href="#">
+			<h1>Demo for Native.js</h1>
+		</a>
+	</header>
+
+	<div class="search-form">
+		<i class="fa fa-angle-left fa-gray" id="searchClose"></i>
+		<div class="search">
+			<form action="" method="">
+				<input type="text" placeholder="请输入搜索关键字">
+				<i class="fa fa-search fa-blue" id="searchSub"></i>
+			</form>
+		</div>
+	</div>
+
+</div>

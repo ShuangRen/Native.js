@@ -1,0 +1,34 @@
+<div class="container">
+		<div class="content-container">
+			<div class="banner">
+				<!--<span class="rand"><i class="fa fa-angle-left fa-gray"></i></span>-->
+				{$^if data.item.pic}
+				<img src="http://demo.yhcms.cn/{{data.item.pic}}" width="100%">
+				{$$if}
+			</div>
+
+			<div class="show_art">
+				<h1>{{data.item.title}}</h1>
+				<small>{{data.item.publishtime}}</small>
+				<ul>
+					<li>
+						<div class="cont">
+							{{data.item.content}}
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+
+			<footer class="botfooter">
+				<span></span>
+				<p>Demo for Native.js</p>
+			</footer>
+		</div>
+		
+		<header class="topheader">
+			<i class="fa fa-angle-left fa-light" id="slideBtn" n:click="goback"></i>
+			<a href="#"><h1>Demo for Native.js</h1></a>
+		</header>
+
+	</div>

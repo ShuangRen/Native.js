@@ -1,0 +1,83 @@
+@charset "utf-8";
+//重置
+.reset(){
+  html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+  fieldset, img { border:none; }
+  img{display: block;}
+  address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+  ul, ol { list-style:none; }
+  input { padding-top:0; padding-bottom:0; font-family: "SimSun","微软雅黑";}
+  input::-moz-focus-inner {border:none; padding:0; }
+  select, input { vertical-align:middle; }
+  select, input, textarea { font-size:12px; margin:0; }
+  input[type="text"], input[type="password"], textarea { outline-style:none; -webkit-appearance:none; }
+  textarea { resize:none; }
+  input,textarea{background: none;border:1px solid #dcdcdc;border-radius: 0.25rem;}
+  table { border-collapse:collapse; }
+  body { color:#333; font:12px/20px "\5FAE\8F6F\96C5\9ED1",Helvetica,"黑体",Arial,Tahoma; background:#fff; }
+  a { color:#666; text-decoration:none; }
+  a:visited { color:#666; }
+  a:hover, a:active, a:focus { color:#ff8400;}
+  html {height:100%;}
+  body {min-height: 100%;}
+  h1, h2, h3, h4, h5, h6 {font-weight: 100;}
+}
+//自定义
+.w(@w:100%) {width: @w;}
+.h(@h:100%) {height:@h;}
+.hidden(@v : hidden) {overflow: @v;}
+.mh(@h:100%) {min-height:@h;}
+.line(@l:36px)  {line-height: @l;}
+.ml(@l:5%) {margin-left: @l;}
+.block(@b:block) {display: @b;}
+.bgc(@c:#fff) {background: @c;}
+.mt (@t:10px){margin-top: @t;}
+.radius(@radius:5px){-webkit-border-radius: @radius;-moz-border-radius: @radius;-ms-border-radius: @radius;border-radius:@radius;}
+
+//盒阴影
+.boxshadow(@x:5px,@y:5px,@box :5px,@color:#b6ebf7){
+   -moz-box-shadow:@arguments;
+   -webkit-box-shadow:@arguments;
+   -ms-box-shadow:@arguments;
+   box-shadow:@arguments;
+}
+
+//背景渐变
+.bg-y(@start :#00ffff,@end :#9fffff){
+    background:-webkit-gradient(linear,0 0, 0 100%,from(@start),to(@end));
+    background:-moz-linear-gradient(top,@start ,@end);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=@start ,
+                endColorstr=@end ,grandientType=0);
+}
+
+.bg-x(@start :#00ffff,@end :#9fffff){
+    background:-webkit-gradient(linear,0 0,100% 0,from(@start),to(@end));
+    background:-moz-linear-gradient(left,@start ,@end);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=@start ,
+                endColorstr=@end ,grandientType=0);
+}
+//放大比例
+.scale(@x :1.2,@y :1.2){
+      -webkit-transform: scale(@x,@y);
+      -moz-transform: scale(@x,@y);
+      -o-transform: scale(@x,@y);
+      -ms-transform: scale(@x,@y);
+      transform: scale(@x,@y);
+}
+
+//移动距离
+.translate(@x :80px,@y :80px){
+      -webkit-transform: translate(@x,@y);
+      -moz-transform: translate(@x,@y);
+      -o-transform: translate(@x,@y);
+      -ms-transform: translate(@x,@y);
+      transform: translate(@x,@y);
+}
+
+//定义过渡
+.tran(@t :id 2s ease-in 0s){
+    transition:@t ;
+    -moz-transition:@t ;
+    -o-transition:@t ;
+    -webkit-transition:@t ;
+}

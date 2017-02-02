@@ -1,0 +1,86 @@
+<div class="container">
+		<div class="content-container">
+			<div class="list_art">
+				<header>
+					<h2>新闻中心</h2>
+					<!--<a href="javascript:;" id="catBtn-s">更多栏目<i class="fa fa-angle-right fa-gray"></i></a>-->
+				</header>
+
+				<ul class="ullist">
+					{$^each data.articleList as item}
+					<li>
+						<a href="#articleDetail?id={{item.id}}">
+							<p>
+								{{item.title}}
+							</p>
+							<i class="fa fa-angle-right fa-gray"></i>
+						</a>
+					</li>
+					{$$each}
+				</ul>
+
+			</div>
+
+			<footer class="botfooter">
+				<span></span>
+				<p>Demo for Native.js</p>
+			</footer>
+		</div>
+		
+		<header class="topheader">
+			<i class="fa fa-angle-left fa-light" id="slideBtn" n:click="goback"></i>
+			<a href="#"><h1>Demo for Native.js</h1></a>
+		</header>
+
+
+		<div class="catelist">
+				<header class="cateheader">
+					<i class="fa fa-angle-left fa-light" id="cateBtn"></i>
+					<a href="#"><h1>产品中心</h1></a>
+				</header>
+				<div class="list">
+					<header>
+						<h2>全部分类</h2>
+						<a href="#"><i class="fa fa-angle-right fa-gray"></i></a>
+					</header>
+					<header>
+						<h2>产品分类1级</h2>
+						<a href="#"><i class="fa fa-angle-right fa-gray"></i></a>
+					</header>
+					<dl>
+						<dt><a href="#">产品分类2级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dt>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+					</dl>
+
+					<dl>
+						<dt><a href="#">产品分类2级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dt>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+					</dl>
+
+					<header>
+						<h2>产品分类1级</h2>
+						<a href="#"><i class="fa fa-angle-right fa-gray"></i></a>
+					</header>
+					<dl>
+						<dt><a href="#">产品分类2级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dt>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+					</dl>
+
+					<dl>
+						<dt><a href="#">产品分类2级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dt>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+					</dl>
+
+					<dl>
+						<dt><a href="#">产品分类2级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dt>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+						<dd><a href="#">产品分类3级</a><a href="#"><i class="fa fa-angle-right fa-gray"></i></a></dd>
+					</dl>
+				</div>
+			</div>
+
+	</div>

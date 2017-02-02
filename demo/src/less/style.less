@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+@import url('z.less');
+@import url('common.less');
+@import url('font-awesome/font-awesome.less');
+//上线包 解除掉 wtach 的 cssmin 的 注释 压缩一边 CSS   解除掉 font-awesome的 注释 注释掉 color
+//html 引入min 的 css
+//@import url('font-awesome/color.less');
+.reset();
+//遮罩
+.container {.w();.hidden();.pos(r);.bgc(#f5f5f5);}
+
+//结构
+.slidebar {.w(60%);.mh();.translate(-100%, 0);.bg-y(#2f333f,#1f212d);.pos(f);.tran(all .3s);
+	ul {.w();.hidden();.mt(2.75rem);
+		li {.w();.h(3.125rem);font-size: 1rem;border-bottom: 1px solid #525569;.line(3.125rem);.tran(all .3s);.translate(-100%, 0);
+			a {color:#fff;.w(80%);.h();.block();padding:0 10%;.pos(r);font-size: .864rem;
+				&.active {border-left: .2rem #8383f1 solid;.w(80%-.2rem);.bgc(#21242a);}
+				i:first-child {margin-right: 5%;}
+				i:last-child {.pos(a);right:5%;top:1.06rem;}
+			}
+		}
+	}
+}
+
+
+.content-container {.w();.mh();padding-top: 2.75rem;.translate(0, 0);.tran(all .3s);
+	img {max-width: 20rem;}
+}
+.topheader {.w();.h(2.75rem);.bg-x(#8383f1, #8383f1);.pos(f);top:0;.translate(0, 0);.tran(all .3s);z-index: 1000;
+	i {.line(2.75rem);font-size: 1.5rem;.fl();.pos(a);top:0;padding:0 1rem;}
+	a {.block(block);.hidden();.line(2.75rem);.fl();.fa-light; text-align: center;width: 100%;
+		h1 {font-size: 1.1875rem;font-weight: 100;}
+	}
+}
+
+.banner {.w();.hidden();
+	/* 本例子css -------------------------------------- */
+	.slideBox{ position:relative; overflow:hidden;/* 设置焦点图最大宽度 */ }
+	.slideBox .hd{ position:absolute; height:1.75rem; line-height:1.75rem; bottom:0; left:45%; z-index:1; }
+	.slideBox .hd li{ display:inline-block; width:.3rem; height:.3rem; -webkit-border-radius:.3rem; -moz-border-radius:.3rem; border-radius:.3rem; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+	.slideBox .hd li.on{ background:#fff;  }
+	.slideBox .bd{ position:relative; z-index:0; }
+	.slideBox .bd li{ position:relative; text-align:center;  }
+	.slideBox .bd li img{ vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+	.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+	.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;  text-align:left;  }
+
+}
+
+.search {.w(19rem);.h(3.25rem);.bgc();.mt(.3rem);padding:0 .5rem;.pos(r);
+	input {.w();.h(2rem);.mt(.625rem);.line(2rem);font-size: .8rem;text-indent: .8rem;}
+	i {font-size: 1.2rem;.pos(a);right:6%;top:1rem;}
+}
+
+.prolist {.w();.hidden();.bgc();.mt(.2rem);
+	header {.w();.h(2.5rem);.line(2.5rem);.pos(r);
+		h2 {.w();.h(1.1rem);.line(1.1rem);font-size: 1rem;text-indent: 2%;color:#8383f1;.pos(r);top:.7rem;border-left:2px solid #8383f1}
+		a {.pos(a);right:2%;font-size: 1.4rem;top:0;padding:0 .3rem;.block(inline-block);
+			i {font-size: 1.6rem;}
+		}
+	}
+
+	.dllist {.w();.hidden();padding:.5rem 0 1.5rem;
+		dd {.w(9rem);.h(11rem);.fl();margin:.5rem;
+			a:first-child {.w();.h(9rem);.block();border:1px solid #dcdcdc;.hidden();}
+			a:last-child {.w();.h(2rem);.line(2rem);.block();font-size: 1rem;}
+		}
+	}
+}
+
+.artlist {.w();.hidden();.bgc();.mt(.2rem);
+	header {.w();.h(2.5rem);.line(2.5rem);.pos(r);
+		h2 {.w();.h(1.1rem);.line(1.1rem);font-size: 1rem;text-indent: 2%;color:#8383f1;.pos(r);top:.7rem;border-left:2px solid #8383f1}
+		a {.pos(a);right:2%;font-size: 1.4rem;top:0;padding:0 .3rem;.block(inline-block);
+			i {font-size: 1.6rem;}
+		}
+	}
+	.ullist {.w();.hidden();padding:.5rem 0 1.5rem;
+		li {.w();.mh(2.5rem);border-bottom: 1px solid #dcdcdc;
+			a {.w(19rem);.mh(2.5rem);.block();.line(2.5rem);padding:0 .5rem;.hidden();
+				p {.w(16rem);.hidden();.fl();font-size: .864rem;}
+				i{.fr();font-size: 1.2rem;.pos(r);top:.8rem;}
+			}
+			&:last-child {border:none;}
+		}
+	}
+}
+
+.botfooter {.w();.mt(.2rem);.hidden();.bgc();padding-bottom: 1.6rem;
+	span {.w();.h(1.718rem);.bg-x(#8383f1, #8383f1);.block();}
+	p{.line(1.2rem);text-align: center;.mt(1rem);font-size: .75rem;}
+}
+
+.search-form {.w();.bgc();.pos(f);top:0;.hidden();.tran(all .2s);opacity: 0;top:50%;height:0;z-index: 10000;
+	.search {.boxshadow(0px, 2px, 2px, #dcdcdc);.w(17.5rem);.fr();padding-left:2.5rem;
+		form {.w();.h();}
+	}
+	i:first-child {.pos(a);left:.5rem;top:1.1rem;font-size: 1.6rem;.fl();z-index: 100}
+}
+
+//产品列表页
+.list_pro {.w();.hidden();.bgc();.mt(.2rem);
+	header {.w();.h(2.5rem);.line(2.5rem);.pos(r);
+		h2 {.w();.h(1.1rem);.line(1.1rem);font-size: 1rem;text-indent: 2%;color:#8383f1;.pos(r);top:.7rem;border-left:2px solid #8383f1}
+		a {.pos(a);right:2%;font-size: .9rem;top:0;
+			i {font-size: 1.4rem;margin-left: .4rem;.pos(r);top:.2rem;}
+		}
+	}
+
+	dl.dllist {.w();.hidden();
+		dd {.w(19rem);.h(6rem);.fl();margin:.5rem;border-bottom: 1px solid #dcdcdc;
+			a:first-child {.w(5rem);.h(5rem);.block();.fl();margin-right: .5rem;border: 1px solid #dcdcdc;.hidden();
+				img {.scale(1.2,1.2);vertical-align: middle;}
+			}
+			a:last-child {.w(13rem);.h(5rem);.block();.fl();.line(3rem);font-size: .864rem;}
+		}
+	}
+
+	.ullist {.w();.hidden();
+		li {.w();.mh(2.5rem);border-bottom: 1px solid #dcdcdc;
+			a {.w(18rem);.mh(2.5rem);.block();.line(2.5rem);padding:0 1rem;.hidden();
+				p {.w(16rem);.hidden();.fl();font-size: 1rem;}
+				i{.fr();font-size: 1.2rem;.pos(r);top:.8rem;}
+			}
+			
+		}
+	}
+
+}
+
+.catelist {.w();.h();.hidden();.bgc();.translate(100%, 0);.tran(all .3s);.pos(f);top:0;z-index: 1000;padding-top: 3rem;
+	.cateheader {.w();.h(2.75rem);.bg-x(#8383f1, #8383f1);.pos(f);top:0;z-index: 100;
+		i {.line(2.75rem);.ml(1rem);font-size: 1.5rem;.fl()}
+		a {.block(inline-block);.hidden();.line(2.75rem);.fl();.ml(5rem);.fa-light;
+			h1 {font-size: 1.5rem;}
+		}
+	}
+
+	.list {.w();.hidden(scroll);
+		header {.w();.h(2.5rem);.line(2.5rem);.pos(r);border-bottom: 1px solid #8383f1;
+			h2 {.w();.h();font-size: 1rem;text-indent: 2%;border-left: .2rem #8383f1 solid;color:#8383f1;}
+			a {.pos(a);right:2%;font-size: .9rem;top:0;
+				i {font-size: 1.4rem;margin-left: .4rem;.pos(r);top:.2rem;}
+			
+			}
+		}
+
+		dl {.w(19rem);.hidden();margin:.5rem;border-bottom: 1px solid #dcdcdc;
+			dt {.w();.h(2rem);.line(2rem);font-weight: bold;color:#6e6e6e;font-size: .9rem;border-bottom:1px solid #dcdcdc;
+				a:last-child {.fr();}
+			}
+			dd {.w();.h(1.5rem);.line(1.5rem);color:#6e6e6e;font-size: .9rem;border-bottom:1px dashed #dcdcdc;
+				&:first-child {border-bottom: none;}
+				a:last-child {.fr();}
+			}
+			&:last-child {margin-bottom: 2rem;}
+		}
+	}
+
+}
+
+.list_art {.w();.hidden();.bgc();.mt(.2rem);
+		header {.w();.h(2.5rem);.line(2.5rem);.pos(r);
+			h2 {.w();.h(1.1rem);.line(1.1rem);font-size: 1rem;text-indent: 2%;color:#8383f1;.pos(r);top:.7rem;border-left:2px solid #8383f1}
+			a {.pos(a);right:2%;font-size: .9rem;top:0;
+				i {font-size: 1.4rem;margin-left: .4rem;.pos(r);top:.2rem;}
+			}
+		}
+
+		.ullist {.w();.hidden();
+			li {.w();.mh(2.5rem);border-bottom: 1px solid #dcdcdc;
+				a {.w(19rem);.mh(2.5rem);.block();.line(2.5rem);padding:0 .5rem;.hidden();
+					p {.w(16rem);.hidden();.fl();font-size: .864rem;}
+					i{.fr();font-size: 1.2rem;.pos(r);top:.8rem;}
+				}
+				&:last-child {border:none;}
+			}
+		}
+}
+
+.pagecont {.w();.hidden();.bgc();
+	header {.w();.h(2.5rem);.line(2.5rem);.pos(r);
+		h2 {.w();.h(1.1rem);.line(1.1rem);font-size: 1rem;text-indent: 2%;color:#8383f1;.pos(r);top:.7rem;border-left:2px solid #8383f1}
+		a {.pos(a);right:2%;font-size: .9rem;top:0;
+			i {font-size: 1.4rem;margin-left: .4rem;.pos(r);top:.2rem;}
+		}
+	}
+	.cont {.w(19rem);.hidden();padding:1rem .5rem;font-size: 1rem;
+		p {.w();.line(1.5rem);margin-bottom: 1rem;}
+	}	
+}
+
+.guestbook-w {.w();.h();.bgc();
+	header {.w();.h(2.5rem);.line(2.5rem);.pos(r);
+		h2 {.w();.h(1.1rem);.line(1.1rem);font-size: 1rem;text-indent: 2%;color:#8383f1;.pos(r);top:.7rem;border-left:2px solid #8383f1}
+		a {.pos(a);right:2%;font-size: .9rem;top:0;
+			i {font-size: 1.4rem;margin-left: .4rem;.pos(r);top:.2rem;}
+		}
+	}
+
+	form {.w(19rem);.hidden();padding:.5rem;
+		.input-group {.w();.h(2.8125rem);.line(2.8125rem);.pos(r);
+			input {.w();.h();text-indent: 2.5rem;font-size: .864rem;border: 1px solid #dcdcdc; border-top: none;border-radius: 0;}
+			&:first-child input {border-top: 1px solid #dcdcdc;}
+			i {font-size:1rem;.pos(a);left: .5rem;top:1.15rem;}
+		}
+
+		.text-group {.w();.h(6.25rem);.line(6.25rem);.pos(r);
+			textarea {.w(18rem);.h(3.75rem);text-indent: 2rem;.line(1.5rem);padding:.8rem .5rem;font-size: .864rem;border: 1px solid #dcdcdc;border-top: none;border-radius: 0;}
+			i {font-size:1rem;.pos(a);left: .5rem;top:1.15rem;}
+		}
+
+		.vcode {
+			input {.w(12rem);.fl();border-top: 1px solid #dcdcdc;}
+			img {.w(6rem);.h();.fr();}
+		}
+
+		.sub-group {.w();.h(2.8125rem);.line(2.8125rem);.pos(r);margin-top: 1rem;
+			input {.w();.h();.bgc(#8383f1);color:#fff;font-weight: bold;font-size: .864rem;}
+		}
+	}
+}
+
+//产品详情
+.banner{
+	.pos(r);
+	.rand {.w(2rem);.h(2rem);.radius(50%);.bgc();.block();.pos(a);top:1rem;left:1rem;text-align: center;
+		i {font-size: 2rem;}	
+	}
+} 
+.show_pro {.w(19rem);.hidden();padding:.5rem;.bgc();
+	ul{
+		&:first-child {.w();.h(2.75rem);
+			li {.fl();.w(9.5rem);border-bottom:2px solid #dcdcdc;.h();.line(2.75rem);text-align: center;font-size: .9rem;
+				&.active {border-bottom:2px solid #8383f1;color:#8383f1;}
+			}
+		}
+		&:last-child {.w(40rem);.hidden();.translate(0, 0);.tran(all .3s);
+			li {.fl();
+				&:first-child {.fl();.w(19rem);font-size: .8rem;line-height: 1.6rem;margin-right: 2rem;}
+				&:last-child {.fl();.w(19rem);font-size: .8rem;line-height: 1.6rem;border-bottom: 1px solid #dcdcdc;color:#b8b8b8;
+					span {.block(inline-block);margin-left: 2rem;color:#000;}
+				}
+			}
+		}
+	}
+}
+
+.show_art {.w(19rem);.hidden();padding:.5rem;.bgc();
+	ul{
+		&:first-child {.w();.h(2.75rem);
+			li {.fl();.w(9.5rem);border-bottom:2px solid #fff;.h();.line(2.75rem);text-align: center;font-size: .9rem;
+				&.active {border-bottom:2px solid #8383f1}
+			}
+		}
+		&:last-child {.w();.hidden();
+			li {
+				&:first-child {.fl();.w();font-size: .8rem;line-height: 1.6rem;}
+			}
+		}
+	}
+
+	h1 {.w();.mh(2rem);text-align: left;font-size: 1.3rem;.line(2rem);}
+	small {.w();.mh(2rem);text-align: left;.line(1rem);font-size: 1rem;}
+}
+
+.btns {.w(19rem);.h(2rem);text-align: center;line-height: 2rem;background:#8383f1;color: #fff;margin:0 auto 1rem;.radius(.3rem);font-size: .875rem;
+	&:active {.bgc(#337ab7 ) }
+}
