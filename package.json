@@ -1,9 +1,8 @@
 {
   "name": "native",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "native",
-  "main": "index.js",
-  "homepage": "ifa-ui.webzeal.cn",
+  "main": "dist/Native.js",
   "license": "ISC",
   "author": {
     "name": "yinhuang",
@@ -11,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://git.webzeal.cn/root/ifa-ui.git"
+    "url": "https://github.com/ShuangRen/Native.js"
   },
   "scripts": {
     "dev": "webpack --watch"
@@ -28,10 +27,6 @@
     "less-loader": "^2.2.3",
     "style-loader": "0.13.1",
     "virtual-html": "^2.0.0",
-    "vue": "^1.0.26",
-    "vue-html-loader": "1.2.3",
-    "vue-loader": "^8.2.3",
-    "vue-router": "^0.7.13",
     "webpack": "^1.13.1"
   }
 }

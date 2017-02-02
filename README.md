@@ -1,6 +1,6 @@
 # nativejs API
 
-## 当前版本 v0.0.1
+## 当前版本 v0.0.3
 
 nativejs 用于快速构建 移动端webapp。借助路由切换以及数据绑定，高效完成项目构建和开发
 
@@ -9,6 +9,18 @@ nativejs 用于快速构建 移动端webapp。借助路由切换以及数据绑�
 
 ## 文档地址
 [https://shuangren1.gitbooks.io/nativejs-doc/content/](https://shuangren1.gitbooks.io/nativejs-doc/content/)
+
+## npm 安装
+
+安装 nativejs
+```bash
+npm install native
+```
+
+安装 native-loader
+```bash
+npm install native-loader
+```
 
 ## 需要改进的地方
 1. setter 的时候 需要区分 是否是需要 dom diff 的 data 属性 ，非 dom diff 的属性不需要 notfiy
