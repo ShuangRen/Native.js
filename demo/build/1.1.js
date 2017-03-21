@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 65:
+/***/ 70:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9,15 +9,15 @@ webpackJsonp([1],{
 	    value: true
 	});
 
-	var _index = __webpack_require__(66);
+	var _index = __webpack_require__(71);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _request = __webpack_require__(67);
+	var _request = __webpack_require__(72);
 
 	var _request2 = _interopRequireDefault(_request);
 
-	var _common = __webpack_require__(69);
+	var _common = __webpack_require__(74);
 
 	var _common2 = _interopRequireDefault(_common);
 
@@ -60,14 +60,14 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 66:
+/***/ 71:
 /***/ function(module, exports) {
 
-	Object.defineProperty(exports, '__esModule', {value: true});exports.default = function (data) {var tmpstr ="<div class='native-container'>"; (function(){tmpstr+="<div class=\"container\"><div class=\"slidebar\" id=\"slidebar\"><ul><li><a href=\"#index\" class=\"active\"><i class=\"fa fa-home fa-light\"></i>首页<i class=\"fa fa-angle-right fa-light\"></i></a></li><li><a href=\"#productList\"><i class=\"fa fa-list fa-light\"></i>产品展示<i class=\"fa fa-angle-right fa-light\"></i></a></li><li><a href=\"#articleList\"><i class=\"fa fa-newspaper-o fa-light\"></i>新闻资讯<i class=\"fa fa-angle-right fa-light\"></i></a></li></ul></div><div class=\"content-container\"><div class=\"banner\"><img src=\"images/banner.jpg\" width=\"100%\"></div><div class=\"prolist\"><header><h2>推荐产品</h2><a href=\"#productList\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><dl class=\"dllist\">";(function(){var xps=0, undefined, item;for(; xps<data.productList.length; xps++){item=data.productList[xps];undefined=xps;tmpstr+="<dd><a href=\"#productDetail?id=";tmpstr+=(item.id);tmpstr+="\"><img src=\"http://demo.yhcms.cn";tmpstr+=(item.img);tmpstr+="\" width=\"100%\"></a><a href=\"#productDetail?id=";tmpstr+=(item.id);tmpstr+="\">";tmpstr+=(item.title);tmpstr+="</a></dd>";}})();tmpstr+="</dl></div><div class=\"artlist\"><header><h2>推荐文章</h2><a href=\"#articleList\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><ul class=\"ullist\">";(function(){var xps=0, undefined, item;for(; xps<data.articleList.length; xps++){item=data.articleList[xps];undefined=xps;tmpstr+="<li><a href=\"#articleDetail?id=";tmpstr+=(item.id);tmpstr+="\"><p>";tmpstr+=(item.title);tmpstr+="</p><i class=\"fa fa-angle-right fa-gray\"></i></a></li>";}})();tmpstr+="</ul></div><footer class=\"botfooter\"><span></span><p>Demo for Native.js</p></footer></div><header class=\"topheader\"><i class=\"fa fa-reorder fa-light\" id=\"slideBtn\"></i><a href=\"#\"><h1>Demo for Native.js</h1></a></header><div class=\"search-form\"><i class=\"fa fa-angle-left fa-gray\" id=\"searchClose\"></i><div class=\"search\"><form action=\"\" method=\"\"><input type=\"text\" placeholder=\"请输入搜索关键字\"><i class=\"fa fa-search fa-blue\" id=\"searchSub\"></i></form></div></div></div>";})();tmpstr +="</div>"; return tmpstr;}
+	Object.defineProperty(exports, '__esModule', {value: true});exports.default = function (data) {var tmpstr ="<div class='native-container'>"; (function(){tmpstr+="<div class=\"container\"><div class=\"slidebar\" id=\"slidebar\"><ul><li><a href=\"#index\" class=\"active\"><i class=\"fa fa-home fa-light\"></i>首页<i class=\"fa fa-angle-right fa-light\"></i></a></li><li><a href=\"#productList\"><i class=\"fa fa-list fa-light\"></i>产品展示<i class=\"fa fa-angle-right fa-light\"></i></a></li><li><a href=\"#articleList\"><i class=\"fa fa-newspaper-o fa-light\"></i>新闻资讯<i class=\"fa fa-angle-right fa-light\"></i></a></li></ul></div><div class=\"content-container\"><div class=\"banner\"><img src=\"images/banner.jpg\" width=\"100%\"></div><div class=\"prolist\"><header><h2>推荐产品</h2><a href=\"#productList\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><dl class=\"dllist\">";(function(){var xps=0, undefined, item;for(; xps<data.productList.length; xps++){item=data.productList[xps];undefined=xps;tmpstr+="<dd><a href=\"#productDetail?id=";tmpstr+=(item.id);tmpstr+="\"><img src=\"http://demo.yhcms.cn";tmpstr+=(item.img);tmpstr+="\" width=\"100%\"></a><a href=\"#productDetail?id=";tmpstr+=(item.id);tmpstr+="\">";tmpstr+=(item.title);tmpstr+="</a></dd>";}})();tmpstr+="</dl></div><div class=\"artlist\"><header><h2>推荐文章</h2><a href=\"#articleList\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><ul class=\"ullist\">";(function(){var xps=0, undefined, item;for(; xps<data.articleList.length; xps++){item=data.articleList[xps];undefined=xps;tmpstr+="<li><a href=\"#articleDetail?id=";tmpstr+=(item.id);tmpstr+="\"><p>";tmpstr+=(item.title);tmpstr+="</p><i class=\"fa fa-angle-right fa-gray\"></i></a></li>";}})();tmpstr+="</ul></div><footer class=\"botfooter\"><span></span><p>Demo for Native.js</p></footer></div><header class=\"topheader\"><i class=\"fa fa-reorder fa-light\" id=\"slideBtn\"></i><a href=\"javascript:;\"><h1>Demo for Native.js</h1></a></header><div class=\"search-form\"><i class=\"fa fa-angle-left fa-gray\" id=\"searchClose\"></i><div class=\"search\"><form action=\"\" method=\"\"><input type=\"text\" placeholder=\"请输入搜索关键字\"><i class=\"fa fa-search fa-blue\" id=\"searchSub\"></i></form></div></div></div>";})();tmpstr +="</div>"; return tmpstr;}
 
 /***/ },
 
-/***/ 67:
+/***/ 72:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -76,7 +76,7 @@ webpackJsonp([1],{
 	    value: true
 	});
 
-	var _http = __webpack_require__(68);
+	var _http = __webpack_require__(73);
 
 	var _http2 = _interopRequireDefault(_http);
 
@@ -121,7 +121,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 68:
+/***/ 73:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";

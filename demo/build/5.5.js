@@ -1,6 +1,6 @@
 webpackJsonp([5],{
 
-/***/ 67:
+/***/ 72:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9,7 +9,7 @@ webpackJsonp([5],{
 	    value: true
 	});
 
-	var _http = __webpack_require__(68);
+	var _http = __webpack_require__(73);
 
 	var _http2 = _interopRequireDefault(_http);
 
@@ -54,7 +54,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 68:
+/***/ 73:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
@@ -268,7 +268,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 78:
+/***/ 83:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -277,15 +277,15 @@ webpackJsonp([5],{
 	    value: true
 	});
 
-	var _index = __webpack_require__(79);
+	var _index = __webpack_require__(84);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _request = __webpack_require__(67);
+	var _request = __webpack_require__(72);
 
 	var _request2 = _interopRequireDefault(_request);
 
-	var _common = __webpack_require__(69);
+	var _common = __webpack_require__(74);
 
 	var _common2 = _interopRequireDefault(_common);
 
@@ -321,10 +321,10 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 79:
+/***/ 84:
 /***/ function(module, exports) {
 
-	Object.defineProperty(exports, '__esModule', {value: true});exports.default = function (data) {var tmpstr ="<div class='native-container'>"; (function(){tmpstr+="<div class=\"container\"><div class=\"content-container\"><div class=\"banner\">";if(data.item.pic){tmpstr+="<img src=\"http://demo.yhcms.cn/";tmpstr+=(data.item.pic);tmpstr+="\" width=\"100%\">";}tmpstr+="</div><div class=\"show_art\"><h1>";tmpstr+=(data.item.title);tmpstr+="</h1><small>";tmpstr+=(data.item.publishtime);tmpstr+="</small><ul><li><div class=\"cont\">";tmpstr+=(data.item.content);tmpstr+="</div></li></ul></div><footer class=\"botfooter\"><span></span><p>Demo for Native.js</p></footer></div><header class=\"topheader\"><i class=\"fa fa-angle-left fa-light\" id=\"slideBtn\" n:click=\"goback\"></i><a href=\"#\"><h1>Demo for Native.js</h1></a></header></div>";})();tmpstr +="</div>"; return tmpstr;}
+	Object.defineProperty(exports, '__esModule', {value: true});exports.default = function (data) {var tmpstr ="<div class='native-container'>"; (function(){tmpstr+="<div class=\"container\"><div class=\"content-container\"><div class=\"banner\">";if(data.item.pic){tmpstr+="<img src=\"http://demo.yhcms.cn/";tmpstr+=(data.item.pic);tmpstr+="\" width=\"100%\">";}tmpstr+="</div><div class=\"show_art\"><h1>";tmpstr+=(data.item.title);tmpstr+="</h1><small>";tmpstr+=(data.item.publishtime);tmpstr+="</small><ul><li><div class=\"cont\">";tmpstr+=(data.item.content);tmpstr+="</div></li></ul></div><footer class=\"botfooter\"><span></span><p>Demo for Native.js</p></footer></div><header class=\"topheader\"><i class=\"fa fa-angle-left fa-light\" id=\"slideBtn\" n:click=\"goback\"></i><a href=\"javascript:;\"><h1>Demo for Native.js</h1></a></header></div>";})();tmpstr +="</div>"; return tmpstr;}
 
 /***/ }
 

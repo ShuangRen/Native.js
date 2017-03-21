@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 67:
+/***/ 72:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9,7 +9,7 @@ webpackJsonp([4],{
 	    value: true
 	});
 
-	var _http = __webpack_require__(68);
+	var _http = __webpack_require__(73);
 
 	var _http2 = _interopRequireDefault(_http);
 
@@ -54,7 +54,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 68:
+/***/ 73:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
@@ -268,7 +268,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 76:
+/***/ 81:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -277,15 +277,15 @@ webpackJsonp([4],{
 	    value: true
 	});
 
-	var _index = __webpack_require__(77);
+	var _index = __webpack_require__(82);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _request = __webpack_require__(67);
+	var _request = __webpack_require__(72);
 
 	var _request2 = _interopRequireDefault(_request);
 
-	var _common = __webpack_require__(69);
+	var _common = __webpack_require__(74);
 
 	var _common2 = _interopRequireDefault(_common);
 
@@ -334,10 +334,10 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 77:
+/***/ 82:
 /***/ function(module, exports) {
 
-	Object.defineProperty(exports, '__esModule', {value: true});exports.default = function (data) {var tmpstr ="<div class='native-container'>"; (function(){tmpstr+="<div class=\"container\"><div class=\"content-container\"><div class=\"list_art\"><header><h2>新闻中心</h2></header><ul class=\"ullist\">";(function(){var xps=0, undefined, item;for(; xps<data.articleList.length; xps++){item=data.articleList[xps];undefined=xps;tmpstr+="<li><a href=\"#articleDetail?id=";tmpstr+=(item.id);tmpstr+="\"><p>";tmpstr+=(item.title);tmpstr+="</p><i class=\"fa fa-angle-right fa-gray\"></i></a></li>";}})();tmpstr+="</ul></div><footer class=\"botfooter\"><span></span><p>Demo for Native.js</p></footer></div><header class=\"topheader\"><i class=\"fa fa-angle-left fa-light\" id=\"slideBtn\" n:click=\"goback\"></i><a href=\"#\"><h1>Demo for Native.js</h1></a></header><div class=\"catelist\"><header class=\"cateheader\"><i class=\"fa fa-angle-left fa-light\" id=\"cateBtn\"></i><a href=\"#\"><h1>产品中心</h1></a></header><div class=\"list\"><header><h2>全部分类</h2><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><header><h2>产品分类1级</h2><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl><header><h2>产品分类1级</h2><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl></div></div></div>";})();tmpstr +="</div>"; return tmpstr;}
+	Object.defineProperty(exports, '__esModule', {value: true});exports.default = function (data) {var tmpstr ="<div class='native-container'>"; (function(){tmpstr+="<div class=\"container\"><div class=\"content-container\"><div class=\"list_art\"><header><h2>新闻中心</h2></header><ul class=\"ullist\">";(function(){var xps=0, undefined, item;for(; xps<data.articleList.length; xps++){item=data.articleList[xps];undefined=xps;tmpstr+="<li><a href=\"#articleDetail?id=";tmpstr+=(item.id);tmpstr+="\"><p>";tmpstr+=(item.title);tmpstr+="</p><i class=\"fa fa-angle-right fa-gray\"></i></a></li>";}})();tmpstr+="</ul></div><footer class=\"botfooter\"><span></span><p>Demo for Native.js</p></footer></div><header class=\"topheader\"><i class=\"fa fa-angle-left fa-light\" id=\"slideBtn\" n:click=\"goback\"></i><a href=\"javascript:;\"><h1>Demo for Native.js</h1></a></header><div class=\"catelist\"><header class=\"cateheader\"><i class=\"fa fa-angle-left fa-light\" id=\"cateBtn\"></i><a href=\"javascript:;\"><h1>产品中心</h1></a></header><div class=\"list\"><header><h2>全部分类</h2><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><header><h2>产品分类1级</h2><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl><header><h2>产品分类1级</h2><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></header><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl><dl><dt><a href=\"#\">产品分类2级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dt><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd><dd><a href=\"#\">产品分类3级</a><a href=\"#\"><i class=\"fa fa-angle-right fa-gray\"></i></a></dd></dl></div></div></div>";})();tmpstr +="</div>"; return tmpstr;}
 
 /***/ }
 

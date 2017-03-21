@@ -77,7 +77,7 @@
 
 	<header class="topheader">
 		<i class="fa fa-reorder fa-light" id="slideBtn"></i>
-		<a href="#">
+		<a href="javascript:;">
 			<h1>Demo for Native.js</h1>
 		</a>
 	</header>

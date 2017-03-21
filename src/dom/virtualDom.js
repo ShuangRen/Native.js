@@ -29,7 +29,6 @@ export default {
 
         //遍历properties
         for(let proper in vm.properties) {
-
             //如果是  identReg  所存在的 标记 则 赋值
             if(that.identReg.test(proper)) {
                 if(proper && (proper == 'width'|| proper == 'height')) {
@@ -50,11 +49,14 @@ export default {
                
                 for(let val in vm.properties[proper]) {
 
-                    val = val.replace(/\-(\w)/, ($0, $1) => {
+                    let val2 = val.replace(/\-(\w)/, ($0, $1) => {
                         return $1.toUpperCase();
                     })
-           
-                    node.style[val] = vm.properties[proper][val];
+                    // if(val2== 'fontFamily') {
+                    //     console.log(val2)
+                    //     console.log(vm.properties[proper][val])
+                    // }
+                    node.style[val2] = vm.properties[proper][val];
                 }
             }
 
@@ -146,6 +148,14 @@ export default {
 
             //如果是  identReg  所存在的 标记 则 赋值
             if(that.identReg.test(proper)) {
+                if(!oldVm.properties[proper]) {
+                     obj.value.push({
+                        type:proper,
+                        name:'',
+                        value:vm.properties[proper]
+                    });
+                    continue;
+                }
 
                 if(vm.properties[proper] !== oldVm.properties[proper]) {
                     obj.value.push({
@@ -172,11 +182,19 @@ export default {
   
                 for(let val in vm.properties[proper]) {
 
-                    val = val.replace(/\-(\w)/, ($0, $1) => {
+                    let val2 = val.replace(/\-(\w)/, ($0, $1) => {
                             return $1.toUpperCase();
                         })
-
-                    if(vm.properties[proper][val] !== oldVm.properties[proper][val]) {
+                    
+                    if(!oldVm.properties[proper]) {
+                        obj.value.push({
+                            type:proper,
+                            name:val,
+                            value:vm.properties[proper][val]
+                        });
+                        continue;
+                    }
+                    if(vm.properties[proper][val2] !== oldVm.properties[proper][val2]) {
                         obj.value.push({
                             type:proper,
                             name:val,
@@ -191,6 +209,15 @@ export default {
                
                 for(let val in vm.properties[proper]) {
                     
+                    if(!oldVm.properties[proper] || !oldVm.properties[proper][val]) {
+                        obj.value.push({
+                            type:proper,
+                            name:val,
+                            value:vm.properties[proper][val]
+                        });
+                        continue;
+                    }
+
                     if(vm.properties[proper][val] !== oldVm.properties[proper][val]) {
                         obj.value.push({
                             type:proper,
@@ -203,6 +230,16 @@ export default {
 
             //如果是 n: 开头 表示 指令, 则 绑定事件(这里初版只做事件, if each show 等指令 以后处理)
             if(/n\:.+/.test(proper)) {
+
+                if(!oldVm.properties[proper]) {
+                    obj.value.push({
+                        type:'event',
+                        name:proper.replace(/n\:/, ''),
+                        value:component[vm.properties[proper]].bind(component),
+                        old:component[oldVm.properties[proper]]
+                    });
+                    continue;
+                }
 
                 if(vm.properties[proper] !==  oldVm.properties[proper]) {
 
